@@ -54,6 +54,111 @@ ul li a {
 ul li:hover a{
     color: var(--text-color);
 }
+.row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 116px);
+}
+.cols {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+.introduction h2{
+    font-size: 100px;
+    font-weight: 600;
+    color: var(--secondary-);
+    z-index: 1111;
+}
+.introduction h2 span {
+    color: var(--text-color);
+    font-weight: 800;
+}
+.introduction h3 {
+    font-size: 35px;
+    font-weight: 350px;
+    color: var(--secondary);
+    margin: 10px 0;
+}
+.introduction .btn {
+    width: 100%;
+    margin-top: 20px;
+}
+.btn button {
+    border: 2px solid #d5d9d9;
+    border-radius: 8px;
+    border-color: #022050;
+    color: #022050;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    cursor: pointer;
+    font-family: 'Nunito', serif;
+    font-weight:600;
+}
+.btn button:hover {
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: #fff;
+    border-color: var(--text-color);
+}
+.socials {
+    position: absolute;
+    bottom: 118px;
+}
+.socials i {
+    font-size: 40px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: var(--secondary);
+    transition: 0.2s ease;
+    margin: 15px;
+}
+.socials i:hover {
+    color: var(--text-color);
+}
+.profile {
+    overflow: visible;
+}
+.imgbox {
+    position: relative;
+    width: 400px;
+    top: 25px;
+    left: 80px;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+.imgbox img {
+    width: 100%;
+}
+.profile:hover .imgbox{
+    transform: translate(10px);
+}
+.profile .pattern {
+    position: absolute;
+    background: url("../img/profile-bg.png");
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 260px !important;
+    top: 120px;
+    transition: 0.3s ease;
+}
+.profile:hover .pattern {
+    transform: translate(20px,-10px) scale(1.05);
+}
+.toggleDark {
+    position: relative;
+    
+}
 /*
 .nunito {
     font-family: "Nunito", serif;
@@ -72,29 +177,7 @@ ul li:hover a{
     font-weight: 700;
     font-style: normal;
   }
-.courier-prime-regular {
-    font-family: "Courier Prime", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.courier-prime-bold {
-    font-family: "Courier Prime", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-.courier-prime-regular-italic {
-    font-family: "Courier Prime", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-.courier-prime-bold-italic {
-    font-family: "Courier Prime", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
+
 .rampart-one-regular {
     font-family: "Rampart One", serif;
     font-weight: 400;
