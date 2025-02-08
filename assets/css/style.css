@@ -32,6 +32,7 @@ nav {
     font-weight: 500;
     text-decoration: none;
     color: var(--secondary);
+    transform: translate(-90px, 0);
 }
 ul {
     display: flex;
@@ -45,7 +46,7 @@ ul li{
 }
 ul li a {
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: capitalize;
     text-decoration: none;
     letter-spacing: 1;
@@ -78,44 +79,19 @@ ul li:hover a{
     font-weight: 800;
 }
 .introduction h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 350px;
     color: var(--secondary);
-    margin: 10px 0;
-}
-.introduction .btn {
-    width: 100%;
-    margin-top: 20px;
-}
-.btn button {
-    border: 2px solid #d5d9d9;
-    border-radius: 8px;
-    border-color: #022050;
-    color: #022050;
-    display: inline-block;
-    font-size: 15px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    padding: 10px 10px;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-    cursor: pointer;
-    font-family: 'Nunito', serif;
-    font-weight:600;
-}
-.btn button:hover {
-    transition: 0.3s ease;
-    padding: 10px 20px;
-    background-color: var(--text-color);
-    color: #fff;
-    border-color: var(--text-color);
+    margin: 20px 0 0 3px;
 }
 .socials {
     position: absolute;
-    bottom: 118px;
+    bottom: 170px;
+    left: 50px;
 }
 .socials i {
-    font-size: 40px;
-    margin: 0 20px;
+    font-size: 35px;
+    margin: 0 10px;
     cursor: pointer;
     color: var(--secondary);
     transition: 0.2s ease;
@@ -143,17 +119,17 @@ ul li:hover a{
 }
 .profile .pattern {
     position: absolute;
-    background: url("../img/profile-bg.png");
+    background: url("../img/deco-bg.png");
     height: 100%;
     width: 30%;
     background-size: contain;
     background-repeat: no-repeat;
-    right: 260px !important;
+    right: 240px !important;
     top: 120px;
     transition: 0.3s ease;
 }
 .profile:hover .pattern {
-    transform: translate(20px,-10px) scale(1.05);
+    transform: translate(20px,-10px) scale(1.2);
 }
 .toggleDark {
     position: relative;
