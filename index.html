@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chauhtluu</title>
 
-    <!-- fontawesome -->
+    <!-- fontawesome for icons -->
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
@@ -20,35 +20,65 @@
      
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="#" class="logo">chauhtluu</a>
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">new media</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-        <div class="row">
-            <div class="cols introduction">
+    <!-- nav bar -->
+    <nav>
+        <ul class="hamburger">
+            <li onclick=hideHamburger()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>    
+            <li><a href="#skills"><span>skills</span></a></li>
+            <li><a href="#projects"><span>projects</span></a></li>
+            <li><a href="#nmc"><span>new media</span></a></li>
+            <li><a href="#contacts"><span>contacts</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#home" class="logo">chauhtluu</a></li>    
+            <li class="hideOnMobile"><a href="#skills"><span>skills</span></a></li>
+            <li class="hideOnMobile"><a href="#projects"><span>projects</span></a></li>
+            <li class="hideOnMobile"><a href="#nmc"><span>new media</span></a></li>
+            <li class="hideOnMobile"><a href="#contacts"><span>contacts</span></a></li>
+            <li class="menu-btn" onclick=showHamburger()><a href="#"><i class="fa-solid fa-bars"></i></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- home section -->
+        <section class="hero" id="home">
+            <div class="intro">
                 <h2>Hi, I'm <span>Chau Luu</span></h2>
                 <h3> Digital Marketer | UX/UI Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium repellendus minima blanditiis quas modi deleniti reiciendis, ducimus qui harum omnis, ad natus ipsam necessitatibus accusantium voluptatem facere doloremque ratione?</p>
+                
                 <div class="socials">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/chauhtluu/chauhtluu.github.io" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chau-ht-luu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-file-pdf"></i></a>
                 </div>
             </div>
-            <div class="cols profile">
-                <div class="imgbox">
-                    <img src="assets/img/chau_profile.png">
-                </div>
-                <div class="pattern"></div>
+
+            <div class="profile">
+                    <img src="assets/img/chau_profile.png" alt="chau's profile caricature">
+            </div>
+        </section>
+        <!-- skills and certs -->
+        <section id="skills"></section>
+        <h2>Skills</h2>
+        <div class="skill-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="cells">
+            <div class="cell">
+                <p>skill entry</p>
             </div>
         </div>
-    </div>
+        <!-- projects -->
+        <section id="projects"></section>
+
+        <!-- new media cert -->
+        <section id="nmc"></section>
+
+        <!-- contacts -->
+        <section id="contacts"></section>        
     
-    
+    </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

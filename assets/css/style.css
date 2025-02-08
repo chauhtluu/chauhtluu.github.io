@@ -1,161 +1,200 @@
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', serif;
-    font-weight: 500;
 }
 :root {
-    --primary: #fff;
+    --primary: #373f51;
     --secondary: #022050;
-    --text-color: #9092FB;
+    --text-color: #1a1c20;
+    --link-color:#9092FB;
+    --background-color: #fff;
 }
-.container {
-    position: relative;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Nunito', serif;
+    font-weight: 700;
     min-height: 100vh;
-    width: 100%;
-    background: var(--primary);
-    overflow: hidden;
+    background-color: var(--background-color);
 }
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* nav bar */
 nav {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    padding: 0 5rem;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    padding: 20px 150px;
-    z-index: 222;
+}
+
+nav li {
+    height: 6rem;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 -2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--text-color);
+    text-transform: lowercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    letter-spacing: 1;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--link-color);
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: 'Rampart One', serif;
+    color: var(--text-color);
 }
 .logo {
-    font-family: 'Rampart One', serif;
-    font-size: 50px;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--secondary);
-    transform: translate(-90px, 0);
+    font-size: 3rem;
 }
-ul {
-    display: flex;
-    list-style: none;
-    flex: 1;
-    justify-content: right;
-    margin-right: 100px;
-}
-ul li{
-    margin: 0 20px;
-}
-ul li a {
-    display: block;
-    font-size: 25px;
-    text-transform: capitalize;
-    text-decoration: none;
-    letter-spacing: 1;
-    color: var(--secondary);
-}
-ul li:hover a{
-    color: var(--text-color);
-}
-.row {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 116px);
-}
-.cols {
-    max-width: 50%;
-    display: flex;
+.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 25%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 60px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.introduction h2{
-    font-size: 100px;
-    font-weight: 600;
-    color: var(--secondary-);
-    z-index: 1111;
+.menu-btn {
+    display: none;
 }
-.introduction h2 span {
-    color: var(--text-color);
-    font-weight: 800;
+/* hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.6rem;
+    margin: 5.6rem 0;
+    gap: 4rem;
+    margin-bottom: 5rem;
 }
-.introduction h3 {
-    font-size: 30px;
-    font-weight: 350px;
-    color: var(--secondary);
-    margin: 20px 0 0 3px;
+.hero .intro {
+    flex: 5;
 }
-.socials {
-    position: absolute;
-    bottom: 170px;
-    left: 50px;
-}
-.socials i {
-    font-size: 35px;
-    margin: 0 10px;
-    cursor: pointer;
-    color: var(--secondary);
-    transition: 0.2s ease;
-    margin: 15px;
-}
-.socials i:hover {
-    color: var(--text-color);
-}
-.profile {
-    overflow: visible;
-}
-.imgbox {
-    position: relative;
-    width: 400px;
-    top: 25px;
-    left: 80px;
-    z-index: 1;
-    transition: 0.3s ease;
-}
-.imgbox img {
-    width: 100%;
-}
-.profile:hover .imgbox{
-    transform: translate(10px);
-}
-.profile .pattern {
-    position: absolute;
-    background: url("../img/deco-bg.png");
-    height: 100%;
-    width: 30%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: 240px !important;
-    top: 120px;
-    transition: 0.3s ease;
-}
-.profile:hover .pattern {
-    transform: translate(20px,-10px) scale(1.2);
-}
-.toggleDark {
-    position: relative;
-    
-}
-/*
-.nunito {
-    font-family: "Nunito", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-.pt-sans-regular {
-    font-family: "PT Sans", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.pt-sans-bold {
-    font-family: "PT Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
 
-.rampart-one-regular {
-    font-family: "Rampart One", serif;
-    font-weight: 400;
-    font-style: normal;
-*/
+.hero .intro h2 {
+    font-family: 'Source Sans 3', serif;
+    font-size: 4rem;
+}
+.hero .intro h2 span {
+    color: var(--link-color);
+}
+.hero .intro h3 {
+    font-family: 'Source Sans 3', serif;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.hero .intro p {
+    font-family: 'Nunito', serif;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.hero .intro .socials {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    margin: 20px -10px;
+}
+
+.hero .intro .socials a {
+   display: inline-block;
+   padding: 5px 10px;
+   margin-right: 0.5rem;
+   margin-bottom: 0.5rem;
+   transition: 0.2s;
+}
+
+.hero .intro .socials a:hover {
+    color: var(--link-color);
+ }
+.hero .profile {
+    flex: 3;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+.profile img {
+    width: 80%;
+    border-radius: 50%;
+}
+.hero .profile img:hover {
+    transform: translate(-10px);
+    transition: 0.3s ease;
+}
+
+/* media queries */
+@media (max-width: 1160px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+@media (max-width: 1000px) {
+    .hero .intro h2 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .hero .intro h3 {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+    .hero .intro p {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+}
+@media (max-width: 740px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero .profile img {
+        width: 300px;
+        transition: 0.3s ease;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        padding: 0 1rem; 
+    }
+    .hamburger {
+        width: 100%;
+    }
+    .hero {
+        padding: 0 1rem;
+    }
+    .hero .intro h2  {
+        font-size: 1.5rem;
+    }
+}
