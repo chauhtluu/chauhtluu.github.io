@@ -51,7 +51,7 @@ nav a {
     align-items: center;
     color: var(--text-color);
     text-transform: lowercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0 1rem;
     letter-spacing: 1;
@@ -78,7 +78,7 @@ nav li:first-child {
     width: 25%;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -95,7 +95,7 @@ nav li:first-child {
     align-items: center;
     padding: 0 5.6rem;
     margin: 5.6rem 0;
-    gap: 4rem;
+    gap: 2rem;
     margin-bottom: 5rem;
 }
 .hero .intro {
@@ -114,11 +114,33 @@ nav li:first-child {
     font-size: 2rem;
     margin: 20px 0;
 }
-
+.hero .intro h4 span {
+    color: var(--link-color);
+}
 .hero .intro p {
     font-family: 'Nunito', serif;
     font-size: 1.2rem;
     margin: 20px 0;
+}
+.hero .intro .resume {
+    padding: 0.2rem 0;
+}
+.hero .intro .resume-btn {
+    border: 0.15rem solid #1a1c20;
+    color: var(--text-color);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: 'Nunito', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    transition-duration: 0.4s;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+.hero .intro .resume-btn:hover {
+    background-color: var(--link-color);
+    border: 0.15rem solid var(--link-color);
+    color: #fff;
 }
 .hero .intro .socials {
     margin-top: 1.5rem;
@@ -139,19 +161,70 @@ nav li:first-child {
  }
 .hero .profile {
     flex: 3;
+    margin-top: -50px;
     display: flex;
+    position: relative;
     justify-content: right;
     overflow: hidden;
 }
 .profile img {
     width: 80%;
-    border-radius: 50%;
+}
+.profile .img1 {
+    z-index: 1;
+    border-radius: 100%;
+    position: absolute;
+}
+.profile.img2 {
+    z-index: 0;
+    position: absolute;
+    transition: 0.3s ease;
+    top: 0;
+    left: 0;
+}
+.img2 .pic:hover {
+    transform: translate(10px);;
 }
 .hero .profile img:hover {
     transform: translate(-10px);
     transition: 0.3s ease;
 }
-
+/* skills section */
+.skills-section {
+    padding: 0 5.6rem;
+    margin-bottom: 5rem;
+}
+.skills-section h2 {
+    text-align: center;
+    font-family: 'Source Sans 3', serif;
+    font-size: 4rem;
+}
+.skills-section .skill-text {
+    text-align: center;
+    font-family: 'Nunito', serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1.5px solid #1a1c20;
+    border-radius: 15px;
+    margin: 0 150px;
+}
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+.skills-section .cells .cell span {
+    margin: 0 6px;
+}
 /* media queries */
 @media (max-width: 1160px) {
     .hideOnMobile {
@@ -170,7 +243,32 @@ nav li:first-child {
         font-size: 1rem;
         transition: 0.2s ease;
     }
+    .hero .intro h4 {
+        font-size: 0.7rem;
+        transition: 0.2s ease;
+    }
     .hero .intro p {
+        font-size: 0.7rem;
+        transition: 0.2s ease;
+    }
+    .hero .intro .resume-btn {
+        font-size: 0.7rem;
+        transition: 0.2s ease;
+    }
+    .hero .intro .socials a {
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+    }
+}
+@media (max-width: 890px) {
+    .skills-section .cells {
+        margin: 0 40px;
+    }
+    .skills-section h2 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .skills-section p {
         font-size: 1rem;
         transition: 0.2s ease;
     }
@@ -183,6 +281,9 @@ nav li:first-child {
         width: 300px;
         transition: 0.3s ease;
     }
+
+    .skills-section .cells {
+        margin: 0 20px;
 }
 @media (max-width: 600px) {
     nav {
@@ -197,4 +298,33 @@ nav li:first-child {
     .hero .intro h2  {
         font-size: 1.5rem;
     }
+    .hero .profile img {
+        width: 200px;
+        transition: 0.3s ease;
+    }
+    .skills-section {
+        padding: 0 20px;
+    }
+    .skills-section h2 {
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+    }
+    .skills-section p {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+    .skills-section .cells {
+        margin: 0 60px;
+    }
+    .skills-section .cells .cell {
+        margin-left: 50px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .skills-section .cells .cell span {
+        font-size: 0.8rem;
+    }
+}
 }
