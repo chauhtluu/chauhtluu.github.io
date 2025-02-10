@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -88,6 +87,7 @@ nav li:first-child {
 .menu-btn {
     display: none;
 }
+
 /* hero section */
 .hero {
     display: flex;
@@ -183,12 +183,13 @@ nav li:first-child {
     left: 0;
 }
 .img2 .pic:hover {
-    transform: translate(10px);;
+    transform: translate(10px);
 }
 .hero .profile img:hover {
     transform: translate(-10px);
     transition: 0.3s ease;
 }
+
 /* skills section */
 .skills-section {
     padding: 0 5.6rem;
@@ -197,7 +198,7 @@ nav li:first-child {
 .skills-section h2 {
     text-align: center;
     font-family: 'Source Sans 3', serif;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .skills-section .skill-text {
     text-align: center;
@@ -222,109 +223,112 @@ nav li:first-child {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
 }
+.skills-section .cells .cell img {
+    width: 1rem;
+    object-fit: contain;
+}
 .skills-section .cells .cell span {
-    margin: 0 6px;
+    margin: 0 8px;
 }
-/* media queries */
-@media (max-width: 1160px) {
-    .hideOnMobile {
-        display: none;
-    }
-    .menu-btn {
-        display: block;
-    }
-}
-@media (max-width: 1000px) {
-    .hero .intro h2 {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro h3 {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro h4 {
-        font-size: 0.7rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro p {
-        font-size: 0.7rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro .resume-btn {
-        font-size: 0.7rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro .socials a {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-}
-@media (max-width: 890px) {
-    .skills-section .cells {
-        margin: 0 40px;
-    }
-    .skills-section h2 {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .skills-section p {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
-}
-@media (max-width: 740px) {
-    .hero {
-        flex-direction: column-reverse;
-    }
-    .hero .profile img {
-        width: 300px;
-        transition: 0.3s ease;
-    }
 
-    .skills-section .cells {
-        margin: 0 20px;
+/*projects section*/
+.projects-section {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
 }
-@media (max-width: 600px) {
-    nav {
-        padding: 0 1rem; 
-    }
-    .hamburger {
-        width: 100%;
-    }
-    .hero {
-        padding: 0 1rem;
-    }
-    .hero .intro h2  {
-        font-size: 1.5rem;
-    }
-    .hero .profile img {
-        width: 200px;
-        transition: 0.3s ease;
-    }
-    .skills-section {
-        padding: 0 20px;
-    }
-    .skills-section h2 {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-    .skills-section p {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
-    .skills-section .cells {
-        margin: 0 60px;
-    }
-    .skills-section .cells .cell {
-        margin-left: 50px;
-        margin-bottom: 10px;
-        padding: 0 20px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .skills-section .cells .cell span {
-        font-size: 0.8rem;
-    }
+.title {
+    text-align: center;
+    font-family: 'Source Sans 3', serif;
+    font-size: 3rem;
 }
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 0.5rem -1rem;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.project-btn {
+    color: var(--text-color);
+    border-color: rgb(163, 163, 163);
+}
+.btn-color-2 {
+    border: 0.15rem solid #1a1c20;
+    color: var(--text-color);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    font-family: 'Nunito', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.btn-color-2:hover {
+    background-color: var(--link-color);
+    border: 0.10rem solid var(--link-color);
+    color: #fff;
+  }
+
+.color-container {
+    border-color: rgba(163, 163, 163);
+    background: rgba(250, 250, 250);
+}
+.details-container {
+    padding: 1rem 1rem;
+    flex: 1;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--text-color);
+    text-align: center;
+    margin: 0 2rem;
+}
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.projects-section img {
+    border-radius: 1.5rem;
+    width: 80%;
+}
+.projects-section img:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+.project-title {
+    margin: 1rem;
+    font-family: 'Source Sans 3', serif;
+}
+.project-sub h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    height: 75px;
+    text-align: center;
+}
+
+.project-sub p {
+    font-weight: 400;
+    font-size: 1rem;
+    height: 3rem;
+    text-align: center;
+}
+.details-title {
+    margin: 1rem;
+    color: var(--text-color);
 }
