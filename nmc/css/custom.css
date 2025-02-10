@@ -1,0 +1,55 @@
+body {
+    overflow: hidden i !important;
+}
+.resume-heading {
+    font-family: "Permanent Marker", cursive;
+    font-size: 50px;
+}
+
+.resume-section {
+    background: url(../img/resume-hero.jpg) center no-repeat;
+    overflow-x: hidden;
+}
+
+.resume-intro {
+    margin: 250px;
+}
+
+.nmi-body {
+    background: url(../img/resume-hero.jpg) top right no-repeat;
+    overflow-x: hidden;
+}
+
+h4 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 35px !important;
+}
+h3 {
+    font-family: 'Josefin Sans', cursive;
+}
+
+li {
+    font-family: 'Josefin Sans', cursive;
+}
+
+.nmi-sections {
+    background: url(../img/cord.jpg) center right no-repeat;
+}
+
+.nmi-intro-sect {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.uxstrategy {
+    margin-top: -100px;
+}
+
+.nmdesign-photo {
+    max-width: 50%;
+    height: auto;
+}
+
+.works-top {
+    margin-top: -100px;
+}
