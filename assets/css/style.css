@@ -12,11 +12,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Nunito', serif;
     font-weight: 700;
     min-height: 100vh;
     background-color: var(--background-color);
+    width: 100%;
 }
 a {
     color: var(--text-color);
@@ -28,10 +30,8 @@ a {
     position: sticky;
     top: 0;
     background-color: var(--background-color);
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(50px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    z-index: 5
+    z-index: 5;
 }
 
 nav {
@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav li {
-    height: 5rem;
+    height: 3.7rem;
 }
 
 nav a {
@@ -86,7 +86,7 @@ nav li:first-child {
     height: 100vh;
     width: 25%;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.586);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -97,7 +97,13 @@ nav li:first-child {
 .menu-btn {
     display: none;
 }
-
+#menu-button {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    
+}
 /* hero section */
 .hero {
     display: flex;
@@ -137,7 +143,7 @@ nav li:first-child {
     padding: 0.2rem 0;
 }
 .hero .intro .resume-btn {
-    border: 0.15rem solid #1a1c20;
+    border: 0.1rem solid #1a1c20;
     color: var(--text-color);
     background-color: #fff;
     border-radius: 5px;
@@ -146,7 +152,6 @@ nav li:first-child {
     font-size: 1rem;
     font-weight: 700;
     transition-duration: 0.4s;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
 }
 .hero .intro .resume-btn:hover {
     background-color: var(--link-color);
@@ -203,7 +208,7 @@ nav li:first-child {
 
 /* skills section */
 .skills-section {
-    padding: 3rem 5.6rem;
+    padding: 3.6rem 5.6rem 2rem 5.6rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -277,7 +282,7 @@ nav li:first-child {
     border-color: rgb(163, 163, 163);
 }
 .btn-color-2 {
-    border: 0.15rem solid #1a1c20;
+    border: 0.1rem solid #1a1c20;
     color: var(--text-color);
     background-color: #fff;
     border-radius: 5px;
@@ -286,7 +291,6 @@ nav li:first-child {
     font-size: 1rem;
     font-weight: 600;
     transition-duration: 0.4s;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   }
   
 .btn-color-2:hover {
@@ -347,9 +351,8 @@ nav li:first-child {
 }
 /* nmc section */
 .nmc-section {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0 2rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 .nmc-details {
     display: flex;
@@ -372,7 +375,7 @@ nav li:first-child {
     font-size: 1rem;
 }
 .nmc-details .nmc-btn {
-    border: 0.15rem solid #1a1c20;
+    border: 0.1rem solid #1a1c20;
     color: var(--text-color);
     background-color: #fff;
     border-radius: 5px;
@@ -381,7 +384,6 @@ nav li:first-child {
     font-size: 1rem;
     font-weight: 600;
     transition-duration: 0.4s;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     margin: 1.5rem 0;
 }
 .nmc-details .nmc-btn:hover {
@@ -389,3 +391,60 @@ nav li:first-child {
     border: 0.10rem solid var(--link-color);
     color: #fff;
 }
+
+/* contact section */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+.contact-section {
+    padding: 0 2rem 1rem 2rem;
+    margin: -2rem 0;
+    margin-bottom: 1rem; 
+}
+.contact-section h2 {
+    text-align: center;
+    font-family: 'Source Sans 3', serif;
+    font-size: 3rem;
+}
+
+.contact-container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.contact-box {
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 1.5px solid #1a1c20;
+    border-color: var(--text-color);
+    background: var(--background-color);
+    margin: 2.5rem auto;
+    padding: 1rem;
+}
+.contact-section .contact-box .contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+.contact-section .contact-box .contact-item a:hover {
+    color: var(--link-color);
+}
+.contact-box .contact-item p {
+    padding: 0.5rem;
+}
+ /* footer */
+ .footer {
+    padding: 0 2rem 1rem 2rem;
+    margin: -2rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Source Sans 3', serif;
+    font-size: 1rem;
+    font-weight: 600;
+ }

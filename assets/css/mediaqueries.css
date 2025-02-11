@@ -46,6 +46,14 @@
         font-size: 2rem;
         transition: 0.2s ease;        
     }
+
+    .contact-section h2 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .contact-section p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 890px) {
@@ -74,6 +82,10 @@
         font-size: 2rem;
         transition: 0.2s ease;        
     }
+    .contact-section h2 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
 }
 
 @media (max-width: 740px) {
@@ -88,7 +100,6 @@
     .skills-section .cells {
         margin: 0 20px;
     }
-
     .nmc-details {
         display: flex;
         flex-wrap: wrap;
@@ -101,13 +112,22 @@
         transition: 0.2s ease;
     }
     .nmc-details .nmc-img {
-        transform: translate(45px, 0);
+        margin-left: 3rem;
     }
+    .contact-section h2 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .contact-box p {
+        font-size: 0.8rem;
+        transition: 0.2s ease;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+    }
+
 }
 @media (max-width: 600px) {
-    body {
-        overflow: auto;
-    }
     nav {
         padding: 0 1rem; 
     }
@@ -180,5 +200,22 @@
     .nmc-section .nmc-details img {
         width: 50%;
         transform: translate(60px, 0);
+    }
+
+    .contact-section {
+        padding: 1rem 1rem;
+    }
+    .contact-section h2 {
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+    }
+    .contact-container {
+        max-width: 80%;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+    }
+    .contact-container .contact-item p {
+        font-size: 1rem;
     }
 }

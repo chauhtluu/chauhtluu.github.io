@@ -24,7 +24,7 @@
     <!-- nav bar -->
     <nav id="navbar">
         <ul class="hamburger">
-            <li onclick=hideHamburger()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>    
+            <li onclick=hideHamburger()><button id="menu-button"><i class="fa-solid fa-xmark"></i></button></li>    
             <li><a href="#skills"><span>skills</span></a></li>
             <li><a href="#projects"><span>projects</span></a></li>
             <li><a href="#nmc"><span>new media</span></a></li>
@@ -35,8 +35,8 @@
             <li class="hideOnMobile"><a href="#skills"><span>skills</span></a></li>
             <li class="hideOnMobile"><a href="#projects"><span>projects</span></a></li>
             <li class="hideOnMobile"><a href="#nmc"><span>new media</span></a></li>
-            <li class="hideOnMobile"><a href="#contacts"><span>contacts</span></a></li>
-            <li class="menu-btn" onclick=showHamburger()><a href="#"><i class="fa-solid fa-bars"></i></i></a></li>
+            <li class="hideOnMobile"><a href="#contact"><span>contact</span></a></li>
+            <li class="menu-btn" onclick=showHamburger()><button id="menu-button"><i class="fa-solid fa-bars"></i></button></li>
         </ul>
     </nav>
 
@@ -152,7 +152,7 @@
             <h2 class="title">New Media Certificate</h2>
             <div class="nmc-details">
                 <div class="nmc-img">
-                    <img src="assets/img/nmi.png" alt="new media institute logo" width: 5rem height: 5rem>
+                    <img src="assets/img/nmi.png" alt="new media institute logo" width: 3rem height: 3rem>
                 </div>
                 <div class="nmc-text">
                     <p>I began my New Media Certificate journey in the Fall of 2019. Through a series of new media classes, I have learned to create and design a variety of project. I learned how to work with HTML/CSS, WordPress as well as Adobe Creative Suite to create things I never would have thought was possible for me. Furthermore, I realized that I could incorporate the things I learned into what I do as a Marketing major.
@@ -162,11 +162,25 @@
         </div>
         </section>
 
-        <!-- contacts -->
-        <section id="contacts">
-
+        <!-- contact -->
+        <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope" title="email"></i>
+                    <p><a href="mailto:chauhtluu1249@gmail.com" target="_blank" rel="noopener noreferrer">chauhtluu1249@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin" title="Linkedin"></i>
+                    <p><a href="https://www.linkedin.com/in/chau-ht-luu" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                </div>
+            </div>
+        </div>
         </section>        
-    
+    <footer class="footer">
+        <p>Chau Luu, 2025</p>
+    </footer>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
