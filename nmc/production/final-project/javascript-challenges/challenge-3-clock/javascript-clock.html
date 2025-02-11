@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Clock</title>
+
+  <!--Logo-->
+  <link href="../../images/logo-1.png" rel="icon">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&family=Bebas+Neue&family=Cabin+Condensed:wght@400;500&family=Concert+One&family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="py-2 d-block">Home</a>
+          <a href="../../tam-cam.html" class="py-2 d-block">Tam Cam</a>
+          <a href="../../../index.html" class="py-2 d-block">Production Homepage</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <h1>Tam Cam</h1>
+    <h2>The Clock is Ticking...</h2>
+  </div>
+
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+
+
+  <style>
+    html {
+      background: #018DED url(sunrise.jpg);
+      background-size: cover;
+      font-family: 'helvetica neue';
+      text-align: center;
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      display: flex;
+      flex: 1;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      margin-left: 200px;
+      margin-right: -100px !important;
+      font-size: 60px;
+      font-family: 'Concert One', cursive;
+    }
+
+    h2 {
+      color: white;
+      margin-left: 200px;
+      margin-right: -100px !important;
+      font-size: 40px;
+      font-family: 'Concert One', cursive;
+    }
+
+   li {
+     list-style-type: none;
+     position: absolute;
+     top: 40px !important;
+     display: inline-block;
+     text-align: center;
+     float: none;
+   }
+
+   a {
+      font-family: 'Staatliches', cursive;
+      font-size: 22px;
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+   a:hover {
+     color: #8A94A8;
+   }
+
+    .clock {
+      width: 25rem;
+      height: 25rem;
+      border: 13px solid #8A94A8;
+      border-radius: 50%;
+      margin: 20px auto;
+      position: relative;
+      padding: 1rem;
+      box-shadow:
+        0 0 0 7px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #8A94A8,
+        inset 0 0 10px #8A94A8,
+        0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px);
+    }
+
+    .hand {
+      width: 50%;
+      height: 3px;
+      border-radius: 70px;
+      background: white;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+</style>
+
+<script>
+  const secondHand = document.querySelector('.second-hand');
+  const minsHand = document.querySelector('.min-hand');
+  const hourHand = document.querySelector('.hour-hand');
+
+  function setDate() {
+    const now = new Date();
+
+    const seconds = now.getSeconds();
+    const secondsDegrees = ((seconds / 60) * 360) + 90;
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+    const mins = now.getMinutes();
+    const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
+    minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+    const hour = now.getHours();
+    const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
+    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+  }
+
+  setInterval(setDate, 1000);
+
+  setDate();
+
+
+</script>
+</body>
+</html>

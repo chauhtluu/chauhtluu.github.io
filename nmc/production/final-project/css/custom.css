@@ -1,0 +1,77 @@
+header .colorlib-navbar-brand .colorlib-logo {
+    font-family: 'Concert One', cursive;
+    font-size: 15px;
+}
+#colorlib-main-nav .logo {
+    font-family: 'Concert One', cursive;
+    font-size: 100px;
+}
+#colorlib-main-nav ul li a span {
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    color: white;
+}
+#colorlib-main-nav ul li.active a span {
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    color: #8A94A8;
+}
+#colorlib-main-nav ul li a:hover span {
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    color: #8A94A8;
+}
+#colorlib-main-nav ul li a:hover {
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    color: #8A94A8;
+}
+.slider-text h1 {
+    font-size: 170px;
+    font-family: 'Concert One', cursive;
+}
+.purpose {
+    font-size: 170px;
+    font-family: 'Concert One', cursive;
+    color: black;
+}
+.slider-text .subheading {
+    font-size: 15px;
+}
+.slider-text .subheading-2 {
+    font-size: 15px;
+}
+h2 {
+    font-family: 'Concert One', cursive;
+    color: white;
+    font-size: 70px !important;
+}
+embed {
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.canvas {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+p {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 22px;
+    color: #8A94A8;
+}
+.challenges:hover {
+    color: #8A94A8 !important;
+}
+.ftco-footer .ftco-footer-widget h2 {
+    font-size: 20px !important;
+}
+.list-unstyled {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 15px;
+}
+.ftco-footer .ftco-footer-widget ul li a span {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 15px;
+}
