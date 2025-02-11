@@ -25,6 +25,14 @@
         font-size: 1.5rem;
         transition: 0.2s ease;
     }
+    .hero-section .nmi-intro .heading {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .courses-section .title {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
 
     .skills-section h2 {
         font-size: 2rem;
