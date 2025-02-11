@@ -1,0 +1,255 @@
+/*--------------------------------------------------------------
+# Preloader (from style.css)
+--------------------------------------------------------------*/  
+  #preloader:before {
+    border: 6px solid #007bff;
+    border-top-color: #151515;
+    border-bottom-color: #151515;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  } 
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/*--------------------------------------------------------------
+End # Preloader (from style.css)
+--------------------------------------------------------------*/  
+body {
+    background-color: #FEFCFC;
+}
+.logo {
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 5px !important;
+}
+.logo img {
+    max-height: 50px !important;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+a {
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+}
+a:hover {
+    color: #007bff;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 100px !important;
+    text-shadow: 10px 10px black;
+    margin: 0;
+    font-weight: 600;
+    line-height: 100px !important;
+    color: #fff;
+}
+.h2-home {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0px 0px;
+    font-size: 24px;
+    font-family: 'Alegreya Sans', sans-serif;
+    word-spacing: 1px;
+}
+.h2-section {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 5px;
+    letter-spacing: 5px !important;
+    word-spacing: 3px;
+}
+.p-section {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 40px;
+    letter-spacing: 5px !important;
+    word-spacing: 5px;
+}
+.h2-section-1 {
+    color: white !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 5px;
+    letter-spacing: 5px !important;
+    word-spacing: 3px;
+}
+.p-section-1 {
+    color: white !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 40px;
+    letter-spacing: 5px !important;
+    word-spacing: 5px;
+}
+.h3-section {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 5px;
+    letter-spacing: 5px !important;
+    word-spacing: 3px;
+}
+h4 {
+    padding-top: 5px !important;
+}
+.h4-section {
+    color: white !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 25px;
+    letter-spacing: 1px !important;
+    word-spacing: 3px;
+}
+.ul-section {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 30px;
+    letter-spacing: 3px !important;
+    word-spacing: 3px;
+} 
+.p-section-2 {
+    font-family: 'Alegreya Sans', cursive !important;
+    font-size: 18px;
+    word-spacing: 5px;
+}
+.p-section-3 {
+    color: white;
+    font-family: 'Dosis', sans-serif !important;
+    font-size: 18px !important;
+    word-spacing: 3px;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+.li-cast {
+    font-family: 'Alegreya Sans', cursive !important;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+.ri-check-double-line {
+    color: black !important;
+}
+.nav-menu a:hover {
+    color: #007bff;
+}
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #007bff;
+}
+.navbar {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+    color: white;
+    background: #007bff;
+}
+.fa-user {
+    max-height: 30px !important;
+    color: black !important;
+}
+.get-started-btn {
+    border-color: #007bff;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    color: black;
+}
+.get-started-btn:hover {
+    border-color: #007bff;
+    background: #007bff;
+    color: white;
+}
+.testimonials .testimonial-item .testimonial-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto;
+}
+.testimonials .owl-dot.active {
+    background-color: #007bff !important;
+    color: #007bff;
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: white;
+    background: #007bff;
+}
+.h4-contact {
+    color: black !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 35px;
+    letter-spacing: 1px !important;
+    word-spacing: 3px;
+}
+.p-contact {
+    color: black;
+    font-family: 'Dosis', sans-serif !important;
+    font-size: 18px !important;
+    word-spacing: 3px;
+}
+.cta-btn:hover {
+    background: #007bff !important;
+    border-color: #007bff !important;
+    color: white !important;
+}
+.contact .php-email-form button[type="submit"] {
+    background-color: #007bff !important;
+    padding: 10px 24px;
+    color: white;
+    transition: all 0.4s ease 0s;
+    border-radius: 4px;
+}
+.contact .php-email-form button[type="submit"]:hover {
+    background: #007bff;
+}
+.text-center {
+    border-color: #007bff;
+}
+#footer .footer-top .social-links a:hover {
+    background: #007bff;
+    color: #151515;
+    text-decoration: none;
+}
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #007bff;
+    color: white;
+    transition: all 0.4s ease 0s;
+}
+.back-to-top i:hover {
+    background: black;
+    color: #007bff;
+}
+.icon-box {
+    border-radius: 20px;
+}
+.bg-secondary {
+    background: linear-gradient(to bottom, #000066 0%, #3333cc 100%) !important;
+}

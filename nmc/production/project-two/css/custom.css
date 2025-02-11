@@ -1,0 +1,76 @@
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #d6e0f0;
+}
+div {
+    margin-bottom: 10px;
+}
+.panel-one {
+    border-color: black;
+    border-width: 4px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+    }
+.panel-two {
+    border-color: black;
+    border-width: 4px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+.panel-three {
+    border-color: black;
+    border-width: 4px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: black;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 8px 10px 8px 30px;
+    border-width: 5px;
+    border-radius: 45px;
+    background: radial-gradient(circle, rgba(242,204,229,1) 0%, rgba(157,193,224,1) 100%);
+    width: 1475px;
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+p {
+    font-family: 'Cuprum', sans-serif;
+}
+a {
+    font-family: 'Bebas Neue', cursive;
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 20px;
+        width: auto;
+        height: auto;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 13px;
+    }
+    img.responsive {
+        width: 300px;
+        height: 200px;
+    }
+}
+.btn:hover {
+    background-color: lightblue !important;
+    color: black !important;   
+}
