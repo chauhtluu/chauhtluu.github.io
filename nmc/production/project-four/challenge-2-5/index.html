@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Panels 💪</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Bungee+Inline&family=Cedarville+Cursive&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+     html {
+      box-sizing: border-box;
+      background: #151E3D;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 20px;
+      font-weight: 200;
+      height: 40px;
+    }
+    
+    body {
+      margin: 0;
+    }
+
+    .nav-bar {
+      text-align: center;
+      margin: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FF2079;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 25px;
+      display: inline;
+      margin: 30px;
+      padding: 6px 5px;
+      border: solid 3px #FF2079;
+      border-radius: 40px;
+    }
+
+    a:hover {
+      color: white;
+      border-color: white;
+    }
+
+    h1 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 5px;
+      padding-bottom: -30px;
+      font-weight: 500;
+    }
+
+    p {
+      font-family: 'Amatic SC', cursive;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      margin-top: -20px !important;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .panels {
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .panel {
+      background: #6B0F9C;
+      box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+      color: #1338BE;
+      text-shadow: 10px 10px black;
+      font-weight: 600;
+      text-align: center;
+      align-items: center;
+      /* Safari transitionend event.propertyName === flex */
+      /* Chrome + FF transitionend event.propertyName === flex-grow */
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+        font-size: 20px;
+      background-size: cover;
+      background-position: center;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel1 { background-image:url(img/bevreveal.png); }
+    .panel2 { background-image:url(img/bermreveal.png); }
+    .panel3 { background-image:url(img/bejkreveal.png); }
+    .panel4 { background-image:url(img/beygreveal.png); }
+    .panel5 { background-image:url(img/bejhreveal.png); }
+
+    /* Flex Children */
+    .panel > * {
+      margin: 0;
+      width: 100%;
+      transition: transform 0.5s;
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .panel > *:first-child { transform: translateY(-100%); }
+    .panel.open-active > *:first-child { transform: translateY(0); }
+    .panel > *:last-child { transform: translateY(100%); }
+    .panel.open-active > *:last-child { transform: translateY(0); }
+
+    .panel p {
+      text-transform: uppercase;
+      font-family: 'Amatic SC', cursive;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+      font-size: 1em;
+      color: white;
+    }
+    
+    .panel p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    .panel.open {
+      flex: 5;
+      font-size: 35px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .panel p {
+        font-size: 1em;
+      }
+    }
+  </style>
+
+  <header>
+    <div class="nav-bar">
+        <a href="../../index.html">Production Homepage</a>
+        <a href="../index.html">Project 4</a>
+        <a href="../challenge-1-1/index.html">Challenge 1</a>
+        <a href="../challenge-3-8/index.html">Challenge 3</a>
+    </div>
+  </header>
+
+  <h1>Flex Panels</h1>
+    <p>Explore some sneak peeks of promotional contents leading up to "BE" album release by clicking on each panels!</p>
+
+  <div class="panels">
+    <div class="panel panel1">
+      <p>11.02.2020</p>
+      <p>I</p>
+      <p>V</p>
+    </div>
+    <div class="panel panel2">
+      <p>11.04.2020</p>
+      <p>Remember,</p>
+      <p>RM</p>
+    </div>
+    <div class="panel panel3">
+      <p>11.05.2020</p>
+      <p>Life</p>
+      <p>JK</p>
+    </div>
+    <div class="panel panel4">
+      <p>11.07.2020</p>
+      <p>Goes</p>
+      <p>YG</p>
+    </div>
+    <div class="panel panel5">
+      <p>11.08.2020</p>
+      <p>On</p>
+      <p>JH</p>
+    </div>
+  </div>
+
+  <script>
+    const panels = document.querySelectorAll('.panel');
+
+    function toggleOpen() {
+      console.log('Hello');
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+
+</body>
+</html>

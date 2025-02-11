@@ -1,0 +1,66 @@
+body {
+    background: url(gradient-wallpaper.jpg);
+}
+
+.nav-bar {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: -15px;
+  }
+  
+a {
+    text-decoration: none;
+    color: #04005E;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    display: inline;
+    margin: 30px;
+    padding: 5px;
+    border: solid 3px #04004E;
+    border-radius: 40px;
+}
+  
+a:hover {
+    color: white;
+    border-color: white;
+}
+  
+h1 {
+    color: #04005E;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 100px;
+    padding: 10px;
+    margin-bottom: -25px;
+}
+
+h2 {
+    color: #04005E;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 70px;
+    padding: 5px;
+    font-weight: 700;
+    background-color: thistle;
+    display: block;
+    border-radius: 20px;
+    width: 850px;
+    margin: auto;
+}
+
+img {
+    margin: 5px;
+    margin-top: 55px;
+    border-radius: 20px;
+}
+p {
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #04005E;
+    opacity: 0.7;
+    width: 600px;
+    margin-top: 5px;
+}

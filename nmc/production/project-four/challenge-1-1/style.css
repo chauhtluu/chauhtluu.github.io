@@ -1,0 +1,91 @@
+html {
+  font-size: 10px;
+  background: url('gradient-paint.jpg') bottom center;
+  background-size: cover;
+}
+
+.nav-bar {
+  text-align: center;
+  margin: 20px;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #04005E;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  display: inline;
+  margin: 30px;
+  padding: 5px;
+  border: solid 3px #04004E;
+  border-radius: 40px;
+}
+
+a:hover {
+  color: white;
+  border-color: white;
+}
+
+h1 {
+  color: #04005E;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 100px;
+  padding: -30px;
+
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: -200px;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #e92efb;
+  box-shadow: 0 0 1rem #e92efb;
+}
+
+kbd {
+  font-family: 'Amatic SC', cursive;
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: white;
+}
