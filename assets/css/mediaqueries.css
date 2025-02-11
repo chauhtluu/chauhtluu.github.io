@@ -1,12 +1,14 @@
-@media (max-width: 1160px) {
+@media (max-width: 1000px) {
     .hideOnMobile {
         display: none;
     }
     .menu-btn {
         display: block;
     }
-}
-@media (max-width: 1000px) {
+    .hero {
+        margin: 1rem 0;
+        margin-bottom: 1rem;
+    }
     .hero .intro h2 {
         font-size: 2rem;
         transition: 0.2s ease;
@@ -15,21 +17,34 @@
         font-size: 1rem;
         transition: 0.2s ease;
     }
-    .hero .intro h4 {
-        font-size: 0.7rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro p {
-        font-size: 0.7rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro .resume-btn {
+    .hero .intro h4, p {
         font-size: 0.7rem;
         transition: 0.2s ease;
     }
     .hero .intro .socials a {
         font-size: 1.5rem;
         transition: 0.2s ease;
+    }
+
+    .skills-section h2 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .skills-section .cells {
+        margin: 0 50px;
+    }
+    .skills-section .cells .cell span {
+        font-size: 0.8rem;
+    }
+
+    .projects-section .title {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+
+    .nmc-section .title {
+        font-size: 2rem;
+        transition: 0.2s ease;        
     }
 }
 
@@ -50,10 +65,14 @@
         font-size: 2rem;
         transition: 0.2s ease;        
     }
-
     .project-sub .project-title {
         font-size: 1.5rem;
         transition: 0.2s ease;
+    }
+
+    .nmc-section .title {
+        font-size: 2rem;
+        transition: 0.2s ease;        
     }
 }
 
@@ -69,8 +88,26 @@
     .skills-section .cells {
         margin: 0 20px;
     }
+
+    .nmc-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease;
+    }
+    .nmc-details .nmc-text p {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+    .nmc-details .nmc-img {
+        transform: translate(45px, 0);
+    }
 }
 @media (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
     nav {
         padding: 0 1rem; 
     }
@@ -78,7 +115,7 @@
         width: 100%;
     }
     .hero {
-        padding: 0 1rem;
+        padding: 3rem 1rem;
     }
     .hero .intro h2  {
         font-size: 1.5rem;
@@ -87,6 +124,10 @@
         width: 200px;
         transition: 0.3s ease;
     }
+    .hero .intro .socials {
+        margin-bottom: -1rem;
+    }
+
     .skills-section {
         padding: 0 20px;
     }
@@ -110,12 +151,34 @@
     .skills-section .cells .cell span {
         font-size: 0.8rem;
     }
+
     .projects-section .title {
         font-size: 1.5rem;
         transition: 0.2s ease;        
     }
-
     .projects-section {
         padding: 0 20px;
+    }
+    .nmc-section {
+        padding: 0 0.5rem;
+    }
+    .nmc-section .title {
+        font-size: 1.5rem;
+        transition: 0.2s ease;        
+    }
+    .nmc-details {
+        padding: 0;
+        margin: 0;
+    }
+    .nmc-details .nmc-text {
+        padding: 0 0.2rem;
+        margin: 0.5rem;
+    }
+    .nmc-details .nmc-btn {
+        margin: 2rem 0;
+    }
+    .nmc-section .nmc-details img {
+        width: 50%;
+        transform: translate(60px, 0);
     }
 }

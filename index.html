@@ -17,12 +17,12 @@
 
     <!-- CSS -->
      <link href="assets/css/style.css" rel="stylesheet">
-     <link href="assets/css/mediaqueries.css" rel="stylesheet">.
+     <link href="assets/css/mediaqueries.css" rel="stylesheet">
 
 </head>
 <body>
     <!-- nav bar -->
-    <nav>
+    <nav id="navbar">
         <ul class="hamburger">
             <li onclick=hideHamburger()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>    
             <li><a href="#skills"><span>skills</span></a></li>
@@ -65,7 +65,6 @@
                     <img class="img2 pic" src="assets/img/deco-bg.png" alt="background image decoration">
             </div>
         </section>
-
         <!-- skills -->
         <section id="skills" class="skills-section">
         <h2>Skills</h2>
@@ -150,15 +149,17 @@
 
         <!-- new media cert -->
         <section id="nmc" class="nmc-section">
-            <h2>New Media Certificate</h2>
-            <div class="nmc-img">
-                <img src="assets/img/nmi-logo.png" alt="new media institute logo">
-            </div>
-            <div class="nmc-text">
-                <p>I began my New Media Certificate journey in the Fall of 2019. After going to some truly amazing classes, I have learned to create and design a variety of project.I learned how to work with HTML/CSS, WordPress as well as Adobe Creative Suite products to create things I never would have thought was possible for me. Furthermore, I realized that I could incorporate the things I learned into what I do as a Marketing major.
-                <br>To learn more about my New Media Certificate journey and see my projects from the New Media classes, click on the button below!</p>
-                <a href="nmc/index.html"><button type="button" class="resume-btn">New Media Portfolio</button></a>
-            </div>
+            <h2 class="title">New Media Certificate</h2>
+            <div class="nmc-details">
+                <div class="nmc-img">
+                    <img src="assets/img/nmi.png" alt="new media institute logo" width: 5rem height: 5rem>
+                </div>
+                <div class="nmc-text">
+                    <p>I began my New Media Certificate journey in the Fall of 2019. Through a series of new media classes, I have learned to create and design a variety of project. I learned how to work with HTML/CSS, WordPress as well as Adobe Creative Suite to create things I never would have thought was possible for me. Furthermore, I realized that I could incorporate the things I learned into what I do as a Marketing major.
+                    <br>To learn more about my New Media Certificate journey and see my projects from the New Media classes, click on the button below!</p>
+                    <a href="nmc/nmc.html"><button type="button" class="nmc-btn">New Media Portfolio</button></a>
+                </div>
+        </div>
         </section>
 
         <!-- contacts -->
