@@ -109,7 +109,7 @@ nav li:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5.6rem;
+    padding: 0 4rem;
     margin: 5.6rem 0;
     gap: 2rem;
     margin-bottom: 4.5rem;

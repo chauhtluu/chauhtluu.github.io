@@ -1,0 +1,96 @@
+/* hero */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 1rem 1;
+    gap: 1rem;
+    margin-bottom: 4.5rem;
+}
+.nmi-intro .heading {
+    font-family: 'Source Sans 3', serif;
+    font-size: 4rem;
+}
+.hero-section .nmi-intro {
+    flex: 5;
+    padding: 1rem;
+    margin: 2rem;
+}
+.hero-section .nmi-pic {
+    flex: 3;
+    margin-top: -50px;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    overflow: hidden;
+}
+.nmi-pic img {
+    width: 80%;
+    padding: 1rem;
+    margin: 2rem;
+}
+.hero .intro {
+    flex: 5;
+}
+.hero .nmi-intro p {
+    font-family: 'Nunito', serif;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+/* courses section */
+.courses-section {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    margin: 2rem 1;
+}
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.course-box {
+    width: 85%;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--text-color);
+    text-align: left;
+    margin: 0.5rem 2rem;
+}
+.course-info, .course-info2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+.course-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+.course-box ul {
+    list-style-type: disc;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.nm-btn {
+    border: 0.1rem solid #1a1c20;
+    color: var(--text-color);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: 'Nunito', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    margin: 1.5rem 1rem;
+}
+
+.course-box button:hover {
+    background-color: var(--link-color);
+    border: 0.10rem solid var(--link-color);
+    color: #fff;
+}
