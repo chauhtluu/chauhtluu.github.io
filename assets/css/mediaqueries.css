@@ -33,6 +33,10 @@
         font-size: 2rem;
         transition: 0.2s ease;
     }
+    .courses-section .course-info h3, .course-info2 {
+        font-size: 1.6rem;
+        transition: 0.2s ease;
+    }
 
     .skills-section h2 {
         font-size: 2rem;
@@ -94,6 +98,35 @@
         font-size: 2rem;
         transition: 0.2s ease;
     }
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .nmi-intro {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .hero-section .nmi-pic img {
+        width: 200px;
+        transition: 0.3s ease;
+        transform: translate(0, 40px);
+        overflow: hidden;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .courses-section {
+        margin: 0;
+        padding: 0 0;
+    }
+    .courses-section .title {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+    .courses-section .course-info h3, .course-info2 {
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+    }
+
 }
 
 @media (max-width: 740px) {
@@ -132,6 +165,19 @@
     }
     .contact-box {
         flex-wrap: wrap;
+    }
+    .courses-section {
+        margin: 0;
+        padding: 0 0;
+    }
+
+    .courses-section .course-info h3, .course-info2 {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+    .courses-container .course-box p {
+        font-size: 0.8rem;
+        transition: 0.2s ease;
     }
 
 }
@@ -222,8 +268,31 @@
     }
     .contact-box {
         flex-wrap: wrap;
+        margin: 1rem;
+        padding: 0;
     }
     .contact-container .contact-item p {
         font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    .contact-container .contact-item i{
+        padding: 0 0.5rem;
+        margin: 0;
+    }
+    
+    .courses-section {
+        padding: 1rem 0;
+    }
+    .courses-container {
+        padding: 0;
+    }
+    .courses-section .title {
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+    }
+    .courses-section .course-info h3, .course-info2 {
+        font-size: 1rem;
+        transition: 0.2s ease;
     }
 }

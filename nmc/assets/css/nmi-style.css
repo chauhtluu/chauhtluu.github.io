@@ -43,11 +43,14 @@
 .courses-section {
     padding: 0 2rem;
     padding-bottom: 2rem;
-    margin: 2rem 1;
+    margin: 1rem 1;
 }
 .courses-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
 }
 .course-box {
     width: 85%;
