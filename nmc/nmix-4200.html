@@ -25,7 +25,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet"> 
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/mediaqueries.css" rel="stylesheet">
+  <link href="assets/css/nmi-style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyPortfolio - v4.1.0
@@ -36,9 +39,31 @@
 </head>
 
 <body>
-
+<!-- nav bar -->
+<nav id="navbar">
+  <ul class="hamburger">
+      <li onclick=hideHamburger()><button id="menu-button"><i class="fa-solid fa-xmark"></i></button></li>    
+      <li><a href="../index.html"><span>home</span></a></li>
+      <li><a href="nmc.html"><span>new media certificate</span></a></li>
+      <li><a href="production/index.html"><span>nmix 4110</span></a></li>
+      <li><a href="nmix-4111e.html"><span>nmix 4111</span></a></li>
+      <li><a href="nmix-4310.html"><span>nmix 4310</span></a></li>
+      <li><a href="https://projects.nmi.cool/2022/nmc/flexlist/"><span>capstone</span></a></li>
+   <!--   <li><a href="#nmc"><span>new media</span></a></li>
+      <li><a href="#contacts"><span>contacts</span></a></li> -->
+  </ul>
+  <ul>
+      <li><a href="../index.html" class="logo">chauhtluu</a></li>
+      <li><a href="nmc.html"><span>new media certificate</span></a></li>    
+      <li class="hideOnMobile"><a href="production/index.html"><span>nmix 4110</span></a></li>
+      <li class="hideOnMobile"><a href="nmix-4111e.html"><span>nmix 4111</span></a></li>
+      <li class="hideOnMobile"><a href="nmix-4310.html"><span>nmix 4310</span></a></li>
+      <li class="hideOnMobile"><a href="https://projects.nmi.cool/2022/nmc/flexlist/"><span>new media capstone</span></a></li>
+      <li class="menu-btn" onclick=showHamburger()><button id="menu-button"><i class="fa-solid fa-bars"></i></button></li>
+  </ul>
+</nav>
   <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+<!--  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
     <div class="container py-2 py-md-5">
       
       <div class="row align-items-start">
@@ -66,7 +91,7 @@
         <span></span>
       </a>
     </div>
-  </nav>
+  </nav> -->
 
   <main id="main">
 
@@ -92,7 +117,7 @@
               </div>
               <div class="row">
                 <h4>Athena Usability Research (Group Project)</h4>
-                <iframe src="assets/Athena-usability-research.pdf" width=800px height=1125px></iframe>
+                <iframe src="../assets/usability protocol.pdf" width=800px height=1125px></iframe>
                 <p><br>Shown above is some selected pages from our Athena Usabily Project. This was one of my favorite assignment during the class. For this project, I worked in a group of 5. We had chose to study Athena, a UGA student portal used for class registration, financial aid, and etc... Together, we performed an audience analysis of Athena current users and create personas, who posed problems with the Athena portal for us to look into and solve. Once we figured out what potential problems users were experiencing, our group developed a Usability Protocol, which details the problems and plans to test the issues. We then conducted usability tests where we simulated a UGA student's class registration and financial aid checking process. In analyzing the participants' performance, we were able to develop recommendations to the problems we had uncover during our usability testing.</p>
               </div>
             </div>
@@ -165,6 +190,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="../assets/js/script.js"></script>
 
 </body>
 
