@@ -1,298 +1,118 @@
 @media (max-width: 1000px) {
-    .hideOnMobile {
-        display: none;
-    }
     .menu-btn {
         display: block;
     }
-    .hero {
+    .home {
         margin: 1rem 0;
         margin-bottom: 1rem;
     }
-    .hero .intro h2 {
-        font-size: 2rem;
+    .home h2 {
+        font-size: 2.5rem;
         transition: 0.2s ease;
     }
-    .hero .intro h3 {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro h4, p {
-        font-size: 0.7rem;
-        transition: 0.2s ease;
-    }
-    .hero .intro .socials a {
+    .home h3 {
         font-size: 1.5rem;
         transition: 0.2s ease;
     }
-    .hero-section .nmi-intro .heading {
+    .home h4 {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+    .home p {
+        font-size: 1rem;
+        transition: 0.2s ease;
+    }
+    .home .home-btn a {
         font-size: 2rem;
         transition: 0.2s ease;
     }
-    .courses-section .title {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .courses-section .course-info h3, .course-info2 {
-        font-size: 1.6rem;
-        transition: 0.2s ease;
-    }
-
-    .skills-section h2 {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .skills-section .cells {
-        margin: 0 50px;
-    }
-    .skills-section .cells .cell span {
-        font-size: 0.8rem;
-    }
-
-    .projects-section .title {
+    #works h2 {
         font-size: 2rem;
         transition: 0.2s ease;
     }
 
-    .nmc-section .title {
-        font-size: 2rem;
-        transition: 0.2s ease;        
-    }
-
-    .contact-section h2 {
+    #courses h2 {
         font-size: 2rem;
         transition: 0.2s ease;
     }
-    .contact-section p {
-        font-size: 0.8rem;
+    .courses {
+        padding: 0 5rem;
     }
 }
 
 @media (max-width: 890px) {
-    .skills-section .cells {
-        margin: 0 40px;
-    }
-    .skills-section h2 {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .skills-section p {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
 
-    .projects-section .title {
-        font-size: 2rem;
-        transition: 0.2s ease;        
-    }
-    .project-sub .project-title {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-
-    .nmc-section .title {
-        font-size: 2rem;
-        transition: 0.2s ease;        
-    }
-    .contact-section h2 {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .hero-section {
+    #home {
         flex-direction: column-reverse;
     }
-    .nmi-intro {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    .hero-section .nmi-pic img {
-        width: 200px;
-        transition: 0.3s ease;
-        transform: translate(0, 40px);
-        overflow: hidden;
-    }
-    .hero-section p {
-        font-size: 1rem;
-    }
-    .courses-section {
+    .home {
         margin: 0;
-        padding: 0 0;
     }
-    .courses-section .title {
-        font-size: 2rem;
-        transition: 0.2s ease;
+    #home .home-img {
+        justify-content: center;
     }
-    .courses-section .course-info h3, .course-info2 {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-
+    .card h3 {
+        font-size: 1rem;
+    }  
 }
 
 @media (max-width: 740px) {
-    .hero {
-        flex-direction: column-reverse;
+    nav {
+        padding: 0 6rem;
     }
-    .hero .profile img {
-        width: 300px;
+    #home {
+        flex-direction: column-reverse;
+        padding: 0 6rem;
+    }
+    .home {
+        margin: 0;
+    }
+    #home .home-img {
+        width: 400px;
         transition: 0.3s ease;
     }
-
-    .skills-section .cells {
-        margin: 0 20px;
-    }
-    .nmc-details {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .works {
+        flex-direction: column;
         align-items: center;
-        transition: 0.4s ease;
     }
-    .nmc-details .nmc-text p {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
-    .nmc-details .nmc-img {
-        margin-left: 3rem;
-    }
-    .contact-section h2 {
-        font-size: 2rem;
-        transition: 0.2s ease;
-    }
-    .contact-box p {
-        font-size: 0.8rem;
-        transition: 0.2s ease;
-    }
-    .contact-box {
-        flex-wrap: wrap;
-    }
-    .courses-section {
-        margin: 0;
-        padding: 0 0;
+    .column {
+        width: 50%;
     }
 
-    .courses-section .course-info h3, .course-info2 {
-        font-size: 1rem;
-        transition: 0.2s ease;
+    .courses {
+        padding: 0 1rem;
     }
-    .courses-container .course-box p {
-        font-size: 0.8rem;
-        transition: 0.2s ease;
+    .course-title {
+        text-align: center;
     }
-
 }
 @media (max-width: 600px) {
     nav {
-        padding: 0 1rem; 
+        padding: 0 2rem; 
     }
-    .hamburger {
-        width: 100%;
+    nav a {
+        font-size: 1rem;
+        letter-spacing: 0.5;
     }
-    .hero {
-        padding: 3rem 1rem;
+    .menu {
+        margin: 0 0.3rem;
+        justify-content: right;
     }
-    .hero .intro h2  {
-        font-size: 1.5rem;
+    #home {
+        padding: 0 2rem;
     }
-    .hero .profile img {
-        width: 200px;
+    .home h2  {
+        font-size: 2rem;
+    }
+    #home .home-img {
+        width: 350px;
         transition: 0.3s ease;
     }
-    .hero .intro .socials {
-        margin-bottom: -1rem;
+    .works {
+        flex-direction: column-reverse;
+        align-items: center;
     }
-
-    .skills-section {
-        padding: 0 20px;
-    }
-    .skills-section h2 {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-    .skills-section p {
-        font-size: 1rem;
-        transition: 0.2s ease;
-    }
-    .skills-section .cells {
-        margin: 10px 40px;
-    }
-    .skills-section .cells .cell {
-        margin: 10px 0 10px 30px;
-        padding: 0 80px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .skills-section .cells .cell span {
-        font-size: 0.8rem;
-    }
-
-    .projects-section .title {
-        font-size: 1.5rem;
-        transition: 0.2s ease;        
-    }
-    .projects-section {
-        padding: 0 20px;
-    }
-    .nmc-section {
-        padding: 0 0.5rem;
-    }
-    .nmc-section .title {
-        font-size: 1.5rem;
-        transition: 0.2s ease;        
-    }
-    .nmc-details {
-        padding: 0;
-        margin: 0;
-    }
-    .nmc-details .nmc-text {
-        padding: 0 0.2rem;
-        margin: 0.5rem;
-    }
-    .nmc-details .nmc-btn {
-        margin: 2rem 0;
-    }
-    .nmc-section .nmc-details img {
-        width: 50%;
-        transform: translate(60px, 0);
-    }
-
-    .contact-section {
-        padding: 1rem 1rem;
-    }
-    .contact-section h2 {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-    .contact-container {
-        max-width: 80%;
-    }
-    .contact-box {
-        flex-wrap: wrap;
-        margin: 1rem;
-        padding: 0;
-    }
-    .contact-container .contact-item p {
-        font-size: 1rem;
-        padding: 0;
-        margin: 0;
-    }
-    .contact-container .contact-item i{
-        padding: 0 0.5rem;
-        margin: 0;
-    }
-    
-    .courses-section {
-        padding: 1rem 0;
-    }
-    .courses-container {
-        padding: 0;
-    }
-    .courses-section .title {
-        font-size: 1.5rem;
-        transition: 0.2s ease;
-    }
-    .courses-section .course-info h3, .course-info2 {
-        font-size: 1rem;
-        transition: 0.2s ease;
+    .column {
+        width: 70%;
     }
 }
