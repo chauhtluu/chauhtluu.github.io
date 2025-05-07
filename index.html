@@ -5,183 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chauhtluu</title>
 
-    <!-- fontawesome for icons -->
-    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+     <!-- fontawesome for icons -->
+     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+     <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+     <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+ 
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Nunito:wght@200..1000&family=Sonsie+One&family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@100..900&family=PT+Sans:wght@400;700&family=Rampart+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+     <!-- CSS -->
      <link href="assets/css/style.css" rel="stylesheet">
      <link href="assets/css/mediaqueries.css" rel="stylesheet">
-
 </head>
 <body>
-    <!-- nav bar -->
-    <nav id="navbar">
-        <ul class="hamburger">
-            <li onclick=hideHamburger()><button id="menu-button"><i class="fa-solid fa-xmark"></i></button></li>    
-            <li><a href="#skills"><span>skills</span></a></li>
-            <li><a href="#projects"><span>projects</span></a></li>
-            <li><a href="#nmc"><span>new media</span></a></li>
-            <li><a href="#contacts"><span>contacts</span></a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav>
         <ul>
-            <li><a href="#home" class="logo">chauhtluu</a></li>    
-            <li class="hideOnMobile"><a href="#skills"><span>skills</span></a></li>
-            <li class="hideOnMobile"><a href="#projects"><span>projects</span></a></li>
-            <li class="hideOnMobile"><a href="#nmc"><span>new media</span></a></li>
-            <li class="hideOnMobile"><a href="#contact"><span>contact</span></a></li>
-            <li class="menu-btn" onclick=showHamburger()><button id="menu-button"><i class="fa-solid fa-bars"></i></button></li>
+            <li><a href="https://chauhtluu.github.io">châu</a></li>
+            <li class="menu"><a href="#works"><span>works</span></a></li>
+        <!--<li class="menu"><a href=""><span>projects</span></a></li>-->
+            <li class="menu"><a href="nmc/nmc.html"><span>new media portfolio</span></a></li>
         </ul>
-    </nav>
+     </nav>
 
-    <main>
-        <!-- home section -->
-        <section class="hero" id="home">
-            <div class="intro">
-                <h2>Hi, I'm <span>Chau Luu</span></h2>
-                <h3> Digital Marketer | UX/UI Designer
-                <h4>BBA in Marketing & International Business @ <span>UGA</span></h4>
-                <p>As a passionate digital marketer and UX designer, I love to take on various challenges to improve and expand upon my skillset. With my previous experience in digital marketing utilizing tools such as Google Analytics and SEO as well as my web development skills, I hope to bring a new perspective to the table and contribute meaningful results.</p>
-                
-                <div class="resume">
-                    <a href="assets/Chau_Luu_Resume.pdf" target="_blank" rel="noopener noreferrer"><button type="button" class="resume-btn">View My Resume</button></a>
-                </div>
-
-                <div class="socials">
-                    <a href="https://github.com/chauhtluu/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" title="Github"></i></a>
-                    <a href="https://www.linkedin.com/in/chau-ht-luu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" title="Linkedin"></i></a>
-                </div>
-            </div>
-
-            <div class="profile">
-                <div class="imgbox"></div>
-                    <img class="img1" src="assets/img/chau-profile.png" alt="chau's profile caricature">
-                    <img class="img2 pic" src="assets/img/deco-bg.png" alt="background image decoration">
-            </div>
-        </section>
-        <!-- skills
-        <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="cells">
-            <div class="cell">
-                <i class="fa-brands fa-html5"></i>
-                <span>HTML</span>
-            </div>
-            <div class="cell">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span>CSS</span>
-            </div>
-            <div class="cell">
-                <i class="fa-brands fa-js"></i>
-                <span>Javascript</span>
-            </div>
-            <div class="cell">
-                <i class="fa-solid fa-database"></i>
-                <span>SQL</span>
-            </div>
-            <div class="cell">
-                <img src="assets/img/figma.webp" alt="Figma Logo">
-                <span>Figma</span>
-            </div>
-            <div class="cell">
-                <img src="assets/img/adobecc.webp" alt="Adobe Creative Cloud Logo">
-                <span>Adobe Creative Cloud</span>
-            </div>
-            <div class="cell">
-                <img src="assets/img/microsoft.webp" alt="Microsoft Logo">
-                <span>Microsoft Office</span>
-            </div>
-            <div class="cell">
-                <img src="assets/img/google.webp" alt="Google Logo">
-                <span>Google Workspace</span>
-            </div>
+     <!-- Home Section -->
+     <section id="home">
+        <div class="home">
+            <h2>Hi, I'm <span>Chau Luu</span></h2>
+            <h3> Digital Marketer | UX/UI Designer</h3>
+            <h4>BBA in Marketing & International Business @ <span>UGA</span></h4>
+            <p>As a passionate digital marketer and UX designer, I love to take on various challenges to improve and expand upon my skillset. With my previous experience in digital marketing utilizing tools such as Google Analytics and SEO as well as my web development skills, I hope to bring a new perspective to the table and contribute meaningful results.</p>
+            
+            <div class="home-btn">
+                <a href="assets/Chau_Luu_Resume.pdf" target="_blank" rel="noopener noreferrer"><button type="button" class="resume-btn">View My Resume</button></a>
+                <a href="https://github.com/chauhtluu/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" title="Github"></i></a>
+                <a href="https://www.linkedin.com/in/chau-ht-luu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" title="Linkedin"></i></a>
+            </div>  
         </div>
-    </section> -->
+        
+        <div class="home-img">
+                <img class="img1" src="assets/img/chau-profile.png" alt="chau's profile caricature">
+                <img class="img2" src="assets/img/deco-bg.png" alt="background image decoration">
+        </div>
+    </section>
 
-        <!-- projects -->
-        <section id="projects" class="projects-section">
-            <h2 class="title">Projects</h2>
-            <div class="projects-container">
-                <div class="about-container">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="assets/img/xbox.svg" alt="xbox thumbnail" class="project-img">
+    <!-- Works Section -->
+    <section id="works">
+        <h2>Works</h2>
+            <div class="works">
+                <div class="column">
+                   <!-- <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="assets/img/athena.svg" alt="#">
+                            <div class="container">
+                                <h3>Headliner</h3>
+                            </div>
                         </div>
-                        <h3 class="project-sub project-title">Xbox Digital Marketing Strategy</h3>
-                        <div class="btn-container">
-                            <a href="assets/xbox-marketing-strategy.pdf" target="_blank" rel="noopener noreferrer"><button class="btn btn-color-2 project-btn">
-                            View</button></a>
+                    </a> -->
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="assets/img/athena.svg" alt="#">
+                            <div class="container">
+                                <h3>Athena</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                <!--    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="assets/img/athena.svg" alt="#">
+                            <div class="container">
+                                <h3>Flexlist</h3>
+                            </div>
+                        </div>
+                    </a> -->
+                </div>
 
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="assets/img/kakao.svg" alt="kakao thumbnail" class="project-img">
+                <div class="column">
+                <!--    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="assets/img/athena.svg" alt="#">
+                            <div class="container">
+                                <h3>Youtube Music</h3>
+                            </div>
                         </div>
-                        <h3 class="project-sub project-title">Kakao Digital Marketing Strategy & Campaign</h3>
-                        <div class="btn-container">
-                            <a href="assets/kakao-marketing-strategy.pdf" target="_blank" rel="noopener noreferrer"><button class="btn btn-color-2 project-btn">
-                            View
-                            </button></a>
+                    </a> -->
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="assets/img/xbox.svg" alt="#">
+                            <div class="container">
+                                <h3>Xbox</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="assets/img/athena.svg" alt="xbox thumbnail" class="project-img">
+                <div class="column">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="assets/img/kakao.svg" alt="#">
+                            <div class="container">
+                                <h3>Kakao</h3>
+                            </div>
                         </div>
-                        <h3 class="project-sub project-title">Athena Usability Analysis</h3>
-                        <div class="btn-container">
-                            <a href="assets/athena-personas.pdf" target="_blank" rel="noopener noreferrer"><button class="btn btn-color-2 project-btn">Personas</button></a>
-                            
-                            <a href="assets/findings.pdf" target="_blank" rel="noopener noreferrer"><button class="btn btn-color-2 project-btn">Findings</button></a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <!-- new media cert
-        <section id="nmc" class="nmc-section">
-            <h2 class="title">New Media Certificate</h2>
-            <div class="nmc-details">
-                <div class="nmc-img">
-                    <img src="assets/img/nmi.png" alt="new media institute logo" width: 3rem height: 3rem>
-                </div>
-                <div class="nmc-text">
-                    <p>I began my New Media Certificate journey in the Fall of 2019. Through a series of new media classes, I have learned to create and design a variety of project. I learned how to work with HTML/CSS, WordPress as well as Adobe Creative Suite to create things I never would have thought was possible for me. Furthermore, I realized that I could incorporate the things I learned into what I do as a Marketing major.
-                    <br>To learn more about my New Media Certificate journey and see my projects from the New Media classes, click on the button below!</p>
-                    <a href="nmc/nmc.html"><button type="button" class="nmc-btn">New Media Portfolio</button></a>
-                </div>
-        </div>
-        </section> -->
-
-        <!-- contact -->
-        <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <div class="contact-box">
-                <div class="contact-item">
-                    <i class="fa-regular fa-envelope" title="email"></i>
-                    <p><a href="mailto:chauhtluu1249@gmail.com" target="_blank" rel="noopener noreferrer">chauhtluu1249@gmail.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-linkedin" title="Linkedin"></i>
-                    <p><a href="https://www.linkedin.com/in/chau-ht-luu" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
-                </div>
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <div>
+                <a href="https://github.com/chauhtluu/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" title="Github"></i></a>
+                <a href="https://www.linkedin.com/in/chau-ht-luu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" title="Linkedin"></i></a>
+                <a href="mailto:chauhtluu1249@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope" title="email"></i></a>
             </div>
+            <p>Chau Luu, 2025</p>
         </div>
-        </section>        
-    <footer class="footer">
-        <p>Chau Luu, 2025</p>
     </footer>
-    </main>
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
