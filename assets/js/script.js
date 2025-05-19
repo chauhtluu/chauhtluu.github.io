@@ -1,9 +1,7 @@
-function showHamburger() {
-    const hamburger = document.querySelector('.hamburger');
-    hamburger.style.display = 'flex'
-}
-
-function hideHamburger() {
-    const hamburger = document.querySelector('.hamburger');
-    hamburger.style.display = 'none'
-}
+function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
