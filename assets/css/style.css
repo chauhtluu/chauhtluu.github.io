@@ -86,23 +86,17 @@ nav li:first-child {
 .home h1 span {
     color: var(--link-color);
 }
+
 .home h2 {
-    font-family: 'Source Sans 3', serif;
-    font-size: 4rem;
-}
-.home h2 span {
-    color: var(--link-color);
-}
-.home h3 {
     font-family: 'Source Sans 3', serif;
     font-size: 2rem;
     margin: 1rem 0;
 }
-.home h4 {
+.home h3 {
     font-size: 1rem;
     margin: 1rem 0;
 }
-.home h4 span {
+.home h3 span {
     color: var(--link-color);
 }
 .home p {
