@@ -7,7 +7,7 @@
     --primary: #373f51;
     --secondary: #022050;
     --text-color: #1a1c20;
-    --link-color:#9092FB;
+    --link-color:#423FDE;
     --background-color: #fff;
 }
 html {
@@ -78,6 +78,13 @@ nav li:first-child {
 }
 .home {
     flex: 5;
+}
+.home h1 {
+    font-family: 'Source Sans 3', serif;
+    font-size: 4rem;
+}
+.home h1 span {
+    color: var(--link-color);
 }
 .home h2 {
     font-family: 'Source Sans 3', serif;
