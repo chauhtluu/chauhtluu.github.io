@@ -166,6 +166,12 @@ nav li:first-child {
     font-weight: 900;
     font-size: 2.5rem;
 }
+.figma {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
 .works {
     display: flex;
     justify-content: center;
